@@ -28,7 +28,7 @@ format:
           \fi
         }
        \setbeamercolor{alerted text}{fg=teal}
-       \usepackage{tikz}
+       \newfontfamily\georgianfont{Kelvinch}
 title: "What to think about when building rule-based morphological parsers?"
 subtitle: "LIFT2 2026 “From Land to Models”"
 author: "George Moroz"
@@ -192,9 +192,110 @@ knitr::include_graphics("images/01_fst_example.png")
   - dictionary with contains information for paradigm construction
   - corpus of texts
 
-# Possible linguistic problems
+# Possible linguistic and para-linguistic problems
 
-## Possible linguistic problems
+## Possible linguistic and para-linguistic problems
+
+I define a problem for a morphological parser creation as any obstacle on the path of creation a unique and correct pair of orthographic word and its glossing.
+
+. . .
+
+I will cover the following list of problems:
+
+- para-linguistic
+- orthographic
+- morphological
+- lexical
+- technical
+
+## Para-linguistic problems
+
+- sociolinguistic variation
+  - intra- and interspeaker variation
+  - dialectal variation
+  - other sociolinguistic variables: gender, age, social status, ...
+  
+. . .
+
+- incompleteness of language descriptions
+  - whatever some researcher decided to put in the grammar may be insufficient for the modeling morphology;
+  - some languages can lack grammatical description/dictionary
+  - dictionary can contain incomplete information about inflectional classes
+
+. . .
+
+- source contradictions:
+  - grammatical descriptions can contradict to each other
+  - grammatical descriptions can contradict to field data
+  - grammatical description can contradict to data from the dictionary
+
+## Orthographic problems
+
+- contradictions between phonological description and orthographic traditions
+  - less units: <лъ> for both [ɬ] and ([tɬ] in Andi
+  - more units: Cyrillic palochka can be also spelled with number <1>, Latin capital \<I\>, and exclamation sign <!>
+  - neutralization: <е> [je] and <ё> [jo] in Russian
+
+. . .
+
+- contradictions between orthographic words and linguistic description
+  - <си къуэ> [sjə qʷe] 'my son', <уи къуэ> [wjə qʷe] 'твой сын' in Kabardian
+  - it is common practice to separate prefixes from the word that should be spelled with capitals: <си Тхь> [sjə tħ] 'my God' in Kabardian
+  - light verb construction: 2 words in Hunzib, 1 word in Tsova Tush
+  - spelling of compounds: 
+\begingroup
+\georgianfont ოთხმოცდაცხრამეტი
+\endgroup 
+[otkhmotsdatskhramet’i] '99' in Georgian
+  - phrasal composits: \<I gave her a don't-you-dare! look\> in English
+  - separable prefixes: \<Intra- and interspeaker variation\> in English
+
+## Morphological problems
+
+- syncretism
+
+. . .
+
+- root alternations, oblique stems etc
+
+. . .
+
+- allomorphy
+
+. . .
+
+- clitics
+  - endoclitics
+
+. . .
+
+- nonconcatenative morphology
+
+. . .
+
+- conversion 
+
+## Lexical problems
+
+- anything that is not suites dictionaries
+  - numerals written with roman or arabic numbers
+  - abbreviations
+  - non adopted borrowings from other languages
+  - dialectal variants
+  - offensive language and taboo words
+
+. . .
+
+- idioms (*Love **thy** neighbor*)
+
+. . .
+
+- non-typical wordformation, e. g. *ambiguate* from *disambiguate*
+
+## Technical problems
+
+- Technical complexity: all software is written for Linux (with the exception of one Python library [`hfst-dev`](https://pypi.org/project/hfst-dev/))
+- Collaboration Challenges: Working together can be difficult; pairing a computational linguist with an experienced language expert is generally preferred in most cases
 
 ## Write me an email!
 
