@@ -96,7 +96,7 @@ Finite-state transducer can be used in order to create rule based morphological 
 
 ## Simplified example from Tsova Tush, bbl, bats1242
 
-On practice FST based morphological parsers produce both machine and human readable version of linguistic knowledge: 
+On practice FST based morphological parsers produce both machine and human readable version of linguistic knowledge (`lexd` code [@swanson2021]): 
 
 \scriptsize
 ```
@@ -177,6 +177,20 @@ knitr::include_graphics("images/01_fst_example.png")
 >- non FST rule-based approaches such as T. Arkhangelskiy [@arkhangelskiy12]
 >- morphological parsers that are specific for some languages (e. g. `mystem` for Russian)
 >- Neural Networks, but adjusting those systems is much more complicated than tweaking rule-based models
+
+## What are ingredients for FST transducer
+
+- computer programs: 
+  - `lexd` for lexicon and morphology
+  - `twol` for phonology and morphonology
+  - `hfst` toolkit for compiling everything together
+
+. . .
+
+- resources
+  - grammatical description
+  - dictionary with contains information for paradigm construction
+  - corpus of texts
 
 # Possible linguistic problems
 
