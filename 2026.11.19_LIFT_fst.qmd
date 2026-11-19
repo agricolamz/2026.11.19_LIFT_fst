@@ -232,14 +232,14 @@ I will cover the following list of problems:
 ## Orthographic problems
 
 - contradictions between phonological description and orthographic traditions
-  - less units: <лъ> for both [ɬ] and ([tɬ] in Andi
+  - less units: \<лъ\> for both [ɬ] and ([tɬ] in Andi
   - more units: Cyrillic palochka can be also spelled with number <1>, Latin capital \<I\>, and exclamation sign <!>
   - neutralization: <е> [je] and <ё> [jo] in Russian
 
 . . .
 
 - contradictions between orthographic words and linguistic description
-  - <си къуэ> [sjə qʷe] 'my son', <уи къуэ> [wjə qʷe] 'твой сын' in Kabardian
+  - <си къуэ> [sjə qʷe] 'my son', <уи къуэ> [wjə qʷe] 'your son' in Kabardian
   - it is common practice to separate prefixes from the word that should be spelled with capitals: <си Тхь> [sjə tħ] 'my God' in Kabardian
   - light verb construction: 2 words in Hunzib, 1 word in Tsova Tush
   - spelling of compounds: 
@@ -247,8 +247,8 @@ I will cover the following list of problems:
 \georgianfont ოთხმოცდაცხრამეტი
 \endgroup 
 [otkhmotsdatskhramet’i] '99' in Georgian
-  - phrasal composits: \<I gave her a don't-you-dare! look\> in English
-  - separable prefixes: \<Intra- and interspeaker variation\> in English
+  - phrasal composits: *I gave her a don't-you-dare! look.* in English
+  - separable prefixes: *Intra- and interspeaker variation.* in English
 
 ## Morphological problems
 
@@ -256,7 +256,7 @@ I will cover the following list of problems:
 
 . . .
 
-- root alternations, oblique stems etc
+- root alternations, oblique stems etc.
 
 . . .
 
@@ -295,6 +295,9 @@ I will cover the following list of problems:
 ## Technical problems
 
 - Technical complexity: all software is written for Linux (with the exception of one Python library [`hfst-dev`](https://pypi.org/project/hfst-dev/))
+
+. . .
+
 - Collaboration Challenges: Working together can be difficult; pairing a computational linguist with an experienced language expert is generally preferred in most cases
 
 ## Write me an email!
